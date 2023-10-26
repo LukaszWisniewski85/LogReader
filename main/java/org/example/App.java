@@ -7,7 +7,7 @@ import static org.example.ProcessFile.*;
 
 public class App {
     public static void main(String[] args){
-        File directory = new File("/Users/lukaszwisniewski/my-app/logs");
+        File directory = new File("/Users/my/my-app/logs");
         File[] files = directory.listFiles();
         Arrays.sort(files, Comparator.comparingLong(File::lastModified).reversed());
         for (File file: files) {

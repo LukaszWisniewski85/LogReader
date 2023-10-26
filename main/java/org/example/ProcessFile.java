@@ -58,7 +58,7 @@ public class ProcessFile {
                 if (string.contains("FATAL")) fatalCount++;
             }
             totalCount = warnCount + infoCount + errorCount + fatalCount + debugCount;
-            System.out.println("Liczba logów INFO: " + infoCount + " WARN: " + warnCount + " ERROR: " + errorCount + " DEBUG: " + debugCount + " FATAL: " + fatalCount);
+            System.out.println("Liczba logów INFO:  " + infoCount + " WARN: " + warnCount + " ERROR: " + errorCount + " DEBUG: " + debugCount + " FATAL: " + fatalCount);
             System.out.println("Total : " + totalCount + " ERROR Ratio: " + 100*errorCount/totalCount + " % " + " DEBUG: " + 100*debugCount/totalCount + " % " + " FATAL: " + 100*fatalCount/totalCount + " % ");
 
         }
